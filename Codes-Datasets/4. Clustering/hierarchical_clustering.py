@@ -19,7 +19,7 @@ plt.show()
 
 # Training the Hierarchical Clustering model on the dataset
 from sklearn.cluster import AgglomerativeClustering
-hc = AgglomerativeClustering(n_clusters = 5, affinity = 'euclidean', linkage = 'ward')
+hc = AgglomerativeClustering(n_clusters = 5, metric = 'euclidean', linkage = 'ward')
 y_hc = hc.fit_predict(X)
 
 # Visualising the clusters
